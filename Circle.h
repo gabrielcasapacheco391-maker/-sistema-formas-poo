@@ -13,7 +13,7 @@ public:
     virtual ~Circle();
 
 
-    double calcularArea(); 
+  virtual  double calcularArea(); 
 
 
     double Getradius() { return radius; }
