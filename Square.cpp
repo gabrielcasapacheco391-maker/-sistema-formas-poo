@@ -1,11 +1,14 @@
 #include "Square.h"
+#include <cmath> 
 
-Square::Square(std::string n, double w,double h)
-{
-    //ctor
+Square::Square(std::string n, double l) : Shape(n) {
+    lado = l;
 }
 
-Square::~Square()
-{
-    //dtor
+Square::~Square() {
+}
+
+
+double Square::calcularArea() {
+    return std::pow(lado, 2);
 }
