@@ -1,31 +1,22 @@
-#ifndef RECTANGLE_H
-#define RECTANGLE_H
+#ifndef SQUARE_H
+#define SQUARE_H
 
 #include "Shape.h"
 
-
-class Rectangle : public Shape
+class Square : public Shape
 {
-    public:
-        /** Default constructor */
-        Rectangle();
-        /** Default destructor */
-        virtual ~Rectangle();
+public:
+    Square(std::string n, double l);
+    virtual ~Square();
 
-        /** Access width
-         * \return The current value of width
-         */
-        double Getwidth() { return width; }
-        /** Access height
-         * \return The current value of height
-         */
-        double Getheight() { return height; }
+    double calcularArea()override;
 
-    protected:
+    double Getlado() { return lado; }
 
-    private:
-        double width; //!< Member variable "width"
-        double height; //!< Member variable "height"
+protected:
+
+private:
+    double lado;
 };
 
-#endif // RECTANGLE_H
+#endif // SQUARE_H
