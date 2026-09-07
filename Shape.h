@@ -5,20 +5,17 @@
 class Shape
 {
     public:
-        /** Default constructor */
+  
         Shape(std::string n);
-        /** Default destructor */
+    
         virtual ~Shape();
 
-        /** Access name
-         * \return The current value of name
-         */
         std::string Getname() { return name; }
 
-    protected:
+  virtual  double calcularArea(); 
 
     private:
-        std::string name; //!< Member variable "name"
+        std::string name;
 };
 
 #endif // SHAPE_H
