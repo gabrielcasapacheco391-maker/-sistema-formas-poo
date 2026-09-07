@@ -2,7 +2,7 @@
 
 Shape::Shape(std::string n)
 {
-    //ctor
+ name=n;
 }
 
 Shape::~Shape()
