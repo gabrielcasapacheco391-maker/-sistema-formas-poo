@@ -1,8 +1,8 @@
 #include "Circle.h"
 
-Circle::Circle(std::string n,double r)
+Circle::Circle(std::string n,double r):Shape(n)
 {
-    //ctor
+ radius=r;
 }
 
 Circle::~Circle()
