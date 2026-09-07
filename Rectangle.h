@@ -1,22 +1,24 @@
-#ifndef SQUARE_H
-#define SQUARE_H
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
 
 #include "Shape.h"
 
-class Square : public Shape
+class Rectangle : public Shape
 {
 public:
-    Square(std::string n, double l);
-    virtual ~Square();
+    Rectangle(std::string n, double b, double a);
+    virtual ~Rectangle();
 
     double calcularArea()override;
 
-    double Getlado() { return lado; }
+    double Getbase() { return base; }
+    double Getaltura() { return altura; }
 
 protected:
 
 private:
-    double lado;
+    double base;
+    double altura;
 };
 
-#endif // SQUARE_H
+#endif // RECTANGLE_H
