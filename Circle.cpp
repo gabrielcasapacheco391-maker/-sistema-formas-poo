@@ -1,6 +1,6 @@
 #include "Circle.h"
 
-
+#include <cmath>
 
 Circle::Circle(std::string n, double r) : Shape(n) {
     radius = r;
