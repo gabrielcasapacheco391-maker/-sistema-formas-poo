@@ -1,26 +1,27 @@
 #ifndef CIRCLE_H
 #define CIRCLE_H
 
-#include "Shape.h"
-
+#include "Shape.h" 
 
 class Circle : public Shape
 {
-    public:
-        /** Default constructor */
-        Circle(std::string n,double r);
-        /** Default destructor */
-        virtual ~Circle();
+public:
 
-        /** Access radius
-         * \return The current value of radius
-         */
-        double Getradius() { return radius; }
+    Circle(std::string n, double r);
 
-    protected:
 
-    private:
-        double radius; //!< Member variable "radius"
+    virtual ~Circle();
+
+
+    double calcularArea(); 
+
+
+    double Getradius() { return radius; }
+
+protected:
+
+private:
+    double radius;
 };
 
 #endif // CIRCLE_H
